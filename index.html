@@ -8,92 +8,88 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	body {
-    overflow:hidden;
-}
+    	overflow:hidden;
+	}
 	
-::placeholder {
- color:#B8B8B8;
-}
-/* first page div*/
-.main1 {
-	transition: all 1s ease;
-	position: absolute;
-	top: 45%;
-	width: 50%;
-	left: 25%;
-	height: 80px;
-	display: block;
-}
-/* second page div*/
-.main2 {
-	transition: all 1s ease;
-	transition-delay: 1.5s;
-	opacity: 0;
-	position: absolute;
-	width: 100%;
-	height: 90%;
-	top: 100%;
-	disabled: true;
-}
-/*dropdown menu*/
-.drpdwn {
-	font-size: 25px;
-	transition: background-color .5s ease;
-	/*margin-top: 20%;*/
-	margin-left: 2%;
-	height: 75%;
-	width: 22%;
-	height: 50%;
-}
-.drpdwn:hover {
-	background-color: #C44346;
-}
-.drpdwn:focus {
-	background-color: #C44346;
-}
-/*search box*/
-.srchbox {
-	padding: 5px;
-	font-size: 25px;
-	transition: background-color .5s ease;
-	border: thin;
-	height: 75%;
-	width: 75%;
-}
+	::placeholder {
+ 		color:#B8B8B8;
+	}
+	/* first page div*/
+	.main1 {
+		transition: all 1s ease;
+		position: absolute;
+		top: 45%;
+		left: 25%;
+		height: 80px;
+		display: block;
+	}
+	/* second page div*/
+	.main2 {
+		transition: all 1s ease;
+		transition-delay: 1.5s;
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		height: 90%;
+		top: 100%;
+		disabled: true;
+	}
+	/*dropdown menu*/
+	.drpdwn {
+		padding: 10px;
+		font-size: 25px;
+		transition: background-color .5s ease;
+		border: thin;
+		height: 75%;
+		width: 200px;
+	}
+	.drpdwn:hover {
+		background-color: #C44346;
+	}
+	.drpdwn:focus {
+		background-color: #C44346;
+	}
+	/*search box*/
+	.srchbox {
+		padding: 10px;
+		font-size: 25px;
+		transition: background-color .5s ease;
+		border: thin;
+		height: 75%;
+		width: 250px;
+	}
 	
 	.srchbox:hover {
-	background-color: #C44346;
-}
+		background-color: #C44346;
+	}
 	
-.srchbox:focus {
-	background-color: #C44346;
-}
-/*search button*/
-#srchbtn {
-	transition: all .5s ease;
-	background: #333;
-	position: absolute;
-	border: thin #FFFFFF;
-	width: 25%;
-	margin-top: 7%;
-	height: 75%;
-	left: 37.5%;
-}
-#srchbtn:hover {
-	color: #FFFFFF;
-	background-color: #C44346;
-}
-/* "Searching..." text after clicking search button*/
-#searchtext {
-	font-size: 50px;
-}
+	.srchbox:focus {
+		background-color: #C44346;
+	}
+	/*search button*/
+	#srchbtn {
+		transition: all .5s ease;
+		background: #333;
+		border: thin #FFFFFF;
+		width: 150px;
+		height: 75%;
+	}
+	#srchbtn:hover {
+		color: #FFFFFF;
+		background-color: #C44346;
+	}
+	/* "Searching..." text after clicking search button*/
+	#searchtext {
+		font-size: 50px;
+	}
 	
 	#backbtn{
-	transition: all 0.5s ease;
-	border: none;
-	background: #333;
+		font-size: 30px;
+		transition: all 0.5s ease;
+		border: none;
+		background: #333;
 		position: absolute;
-	left: 90%;
+		left: 90%;
 		top:90%;
 	}
 	#backbtn:hover{
@@ -113,12 +109,12 @@
 <body>
 <div class="main1" id="main1">
   <input type="search" class="srchbox" id="srchbox" placeholder="Search crop...">
-  <select name="select" class="drpdwn">
-    <option value="8hours">Last 8 Hours</option>
-    <option value="16hours">Last 16 Hours</option>
-    <option value="1day">Last Day</option>
-    <option value="7days">Last Week</option>
-    <option value="14days">Last 2 Weeks</option>
+  <select name="select" class="drpdwn"> 
+    <option value="8hours">past 8 hours</option>
+    <option value="16hours">past 16 hours</option>
+    <option value="1day">past day</option>
+    <option value="7days">past week</option>
+    <option value="14days">past weeks</option>
   </select>
   <button onClick="search()" id="srchbtn" type="button" class="btn btn-default">Search</button>
 </div>
@@ -127,6 +123,7 @@
 <div class="main2" id="main2">
   <p id="searchtext">fsdfds</p>
   <button id="backbtn" onClick="back()" type="button" class="btn btn-default">Back</button>
+	
 </div>
 	
 	
