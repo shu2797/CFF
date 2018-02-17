@@ -40,10 +40,11 @@
 	font-size: 25px;
 	transition: background-color .5s ease;
 	/*margin-top: 20%;*/
-	margin-left: 2%;
-	height: 75%;
+	margin-left: 1%;
+	height: 100%;
 	width: 22%;
-	height: 50%;
+	height: 75%;
+
 }
 .drpdwn:hover {
 	background-color: #C44346;
@@ -139,7 +140,11 @@
 		main1.style.top="-20%";
 		var search = document.getElementById("srchbox").value;
 		var searchtext = document.getElementById("searchtext");
-		searchtext.innerHTML = "Searching " + search + "...";
+		if (search == ""){
+			searchtext.innerHTML = "Please enter crop name!";
+		} else{
+			searchtext.innerHTML = "Searching " + search + "...";
+		}
 	}
 	
 	function back(){
